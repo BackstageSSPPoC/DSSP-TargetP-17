@@ -12,7 +12,7 @@ metadata:
     argocd/app-name: dssp-targetp-17-dev
     backstage.io/kubernetes-id: DSSP-TargetP-17
     sonarqube.org/project-key: dssp-targetp-17
-    prometheus.io/rule: "kube_pod_container_resource_requests{pod=~'DSSP-TargetP-17.*'}|resource,kube_pod_container_status_restarts_total{pod=~'DSSP-TargetP-17.*'}|container"
+    prometheus.io/rule: "kube_pod_container_resource_requests{pod=~'dssp-targetp-17.*'}|resource,kube_pod_container_status_restarts_total{pod=~'dssp-targetp-17.*'}|container"
     prometheus.io/alert: "all"
 
 spec:
