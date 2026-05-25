@@ -1,0 +1,41 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+
+metadata:
+  name: DSSP-TargetP-17
+  description: Service DSSP-TargetP-17
+
+  annotations:
+    github.com/project-slug: BackstageSSPPoC/DSSP-TargetP-17
+    backstage.io/techdocs-ref: dir:.
+    jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-TargetP-17/main
+    argocd/app-name: dssp-targetp-17-dev
+    backstage.io/kubernetes-id: DSSP-TargetP-17
+    sonarqube.org/project-key: dssp-targetp-17
+    prometheus.io/rule: "kube_pod_container_resource_requests{pod=~'DSSP-TargetP-17.*'}|resource,kube_pod_container_status_restarts_total{pod=~'DSSP-TargetP-17.*'}|container"
+    prometheus.io/alert: "all"
+
+spec:
+  type: service
+  owner: development
+  lifecycle: experimental
+
+# apiVersion: backstage.io/v1alpha1
+# kind: Component
+
+# metadata:
+#   name: DSSP-TargetP-17
+#   description: Service DSSP-TargetP-17
+
+#   annotations:
+#     github.com/project-slug: BackstageSSPPoC/DSSP-TargetP-17
+#     backstage.io/techdocs-ref: dir:.
+#     jenkins.io/job-full-name: Backstage_SSP_PoC/DSSP-TargetP-17/main
+#     argocd/app-name: dssp-targetp-17
+#     backstage.io/kubernetes-id: DSSP-TargetP-17
+#     sonarqube.org/project-key: dssp-targetp-17
+
+# spec:
+#   type: service
+#   owner: development
+#   lifecycle: experimental
